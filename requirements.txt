@@ -1,0 +1,4 @@
+pyserial
+opencv-python
+pynput
+Pillow
