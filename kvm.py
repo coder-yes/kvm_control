@@ -274,7 +274,7 @@ class VideoCaptureApp:
     def get_available_cameras(self):
         available_cameras = []
         for i in range(0, 10):  # Check up to index 9
-            capture = cv2.VideoCapture(i)
+            capture = cv2.VideoCapture(i, cv2.CAP_DSHOW)
             if capture.isOpened():
                 capture.release()
                 available_cameras.append(str(i))
